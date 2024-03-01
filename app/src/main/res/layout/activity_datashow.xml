@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bbg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/sp_28"
+        android:text="独居老人行为检测系统" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+        android:background="@color/touming"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="参数名"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@drawable/backbtnbluekong" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="当前数据"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/touming" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:translationX="@dimen/dp_20"
+                android:translationY="@dimen/dp_18"
+                app:srcCompat="@mipmap/q1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="心率"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16"
+                android:translationX="@dimen/dp_18" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/tv_data1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="-"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/touming" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="血氧"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16"
+                android:translationX="@dimen/dp_18" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:translationX="@dimen/dp_20"
+                android:translationY="@dimen/dp_18"
+                app:srcCompat="@mipmap/q2" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/tv_data2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="-"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/touming" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/touming" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView4"
+
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:translationX="@dimen/dp_20"
+                android:translationY="@dimen/dp_18"
+                app:srcCompat="@mipmap/q4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="体温"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16"
+                android:translationX="@dimen/dp_18" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@drawable/backbtnbluekong" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/tv_data4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="-"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/touming" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_65"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView65"
+
+                android:layout_width="28dp"
+                android:layout_height="29dp"
+                android:translationX="@dimen/dp_20"
+                android:translationY="@dimen/dp_18"
+                app:srcCompat="@mipmap/q3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="摔倒"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16"
+                android:translationX="@dimen/dp_18" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="@drawable/backbtnbluekong" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/tv_data5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:text="-"
+                android:textColor="#333333"
+                android:textSize="@dimen/sp_16" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/touming" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/touming" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/touming" />
+</LinearLayout>
